@@ -23,3 +23,26 @@ def rd1_question_9(df):
     st.plotly_chart(fig, use_container_width=True)
 
     return None
+
+def rd1_question_13(df):
+    df_grouped = (
+        df.groupby("owner")
+        .agg(qty=pd.NamedAgg("id", "count"))
+        .sort_values("qty")
+        .reset_index()
+    )
+
+    fig = px.bar(
+        df_grouped,
+        x="owner",
+        y="qty",
+        labels={"owner": "Owner Types", "qty": "Quantity"},
+        color="owner",
+        text="qty",
+    )
+
+    fig.update_traces(textposition="outside")
+
+    st.plotly_chart(fig, use_container_width=True)
+
+    return None
