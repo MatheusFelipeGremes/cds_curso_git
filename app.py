@@ -49,6 +49,8 @@ def create_answers_section(df):
     return None
 def print_saudacao():
     print("Ola Matheus")
+def print_despedida():
+    print("Ate mais")
 
 def main():
     
