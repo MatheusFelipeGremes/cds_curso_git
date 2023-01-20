@@ -47,12 +47,15 @@ def create_answers_section(df):
     st.subheader("Are the company that has the most expensive bikes registered also the company with the most bikes registered?")
     st.subheader("Which bikes are good for buying?")
     return None
+def print_saudacao():
+    print("Ola Matheus")
 
 def main():
     
     df_raw = load_data()
     create_dataframe_section(df_raw)
     create_answers_section(df_raw)
+    print_saudacao()
 
     
 
