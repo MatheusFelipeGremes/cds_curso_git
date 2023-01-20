@@ -51,6 +51,8 @@ def print_saudacao():
     print("Ola Matheus")
 def print_despedida():
     print("Ate mais")
+def comprimento_descolado():
+    print("Fala manoooo")
 
 def main():
     
