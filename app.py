@@ -49,9 +49,9 @@ def create_answers_section(df):
     return None
 
 def main():
-    df = load_data()
-    create_dataframe_section(df)
-    create_answers_section(df)
+    df_raw = load_data()
+    create_dataframe_section(df_raw)
+    create_answers_section(df_raw)
 
 if __name__ == "main":
     main()
